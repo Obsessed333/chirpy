@@ -1,0 +1,6 @@
+ POST http://localhost:8080/admin/reset
+Content-Type: application/json
+
+{
+  "body": "This is a kerfuffle opinion"
+}
