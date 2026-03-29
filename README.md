@@ -67,15 +67,15 @@ Chirps are the core of the platform. They are limited to **140 characters** and 
 ##  User Management
 
 
-| Method | Endpoint | Description |
+| Method | Endpoint | Description | Auth? |
 | :--- | :--- | :--- | :---: |
-| `POST` | `/api/users` | Register a new user account. |
-| `PUT` | `/api/users` | Update email or password. |
-| `POST` | `/api/polka/upgrade` | Upgrade a user to **Chirpy Red** status. |
+| `POST` | `/api/users` | Register a new user account. | ❌ |
+| `PUT` | `/api/users` | Update email or password. | ✅ |
+| `POST` | `/api/polka/upgrade` | Upgrade a user to **Chirpy Red** status. | 🔑 |
 
 ---
 
-## Administration & Metrics
+##  Administration & Metrics
 
 Used for monitoring server health and development testing.
 
@@ -85,7 +85,7 @@ Returns an HTML page showing the total number of requests received by the server
 
 ### Database Reset
 **`POST /admin/reset`**
-> **DANGER**: This endpoint wipes all users and chirps from the database. Use only in development/testing environments.
+>  **DANGER**: This endpoint wipes all users and chirps from the database. Use only in development/testing environments.
 
 ---
 
